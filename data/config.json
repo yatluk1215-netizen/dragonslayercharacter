@@ -8,23 +8,38 @@
     "cardHeight": 1800
   },
   "stats": [
-    { "id": "str", "label": "力量", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 },
-    { "id": "dex", "label": "敏捷", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 },
-    { "id": "con", "label": "體質", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 },
-    { "id": "int", "label": "智力", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 },
-    { "id": "wis", "label": "感知", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 },
-    { "id": "cha", "label": "魅力", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 }
+    { "id": "str", "label": "力量", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 30 },
+    { "id": "dex", "label": "敏捷", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 30 },
+    { "id": "con", "label": "體質", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 30 },
+    { "id": "int", "label": "智力", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 30 },
+    { "id": "wis", "label": "感知", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 30 },
+    { "id": "cha", "label": "魅力", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 30 }
   ],
   "pointCost": [
-    { "targetValue": 8, "cost": 0 },
-    { "targetValue": 9, "cost": 1 },
-    { "targetValue": 10, "cost": 2 },
-    { "targetValue": 11, "cost": 3 },
-    { "targetValue": 12, "cost": 5 },
-    { "targetValue": 13, "cost": 7 },
-    { "targetValue": 14, "cost": 10 },
-    { "targetValue": 15, "cost": 13 }
-  ],
+  { "targetValue": 8, "cost": 0 },
+  { "targetValue": 9, "cost": 1 },
+  { "targetValue": 10, "cost": 2 },
+  { "targetValue": 11, "cost": 3 },
+  { "targetValue": 12, "cost": 4 },
+  { "targetValue": 13, "cost": 5 },
+  { "targetValue": 14, "cost": 6 },
+  { "targetValue": 15, "cost": 7 },
+  { "targetValue": 16, "cost": 8 },
+  { "targetValue": 17, "cost": 9 },
+  { "targetValue": 18, "cost": 10 },
+  { "targetValue": 19, "cost": 11 },
+  { "targetValue": 20, "cost": 12 },
+  { "targetValue": 21, "cost": 13 },
+  { "targetValue": 22, "cost": 14 },
+  { "targetValue": 23, "cost": 15 },
+  { "targetValue": 24, "cost": 16 },
+  { "targetValue": 25, "cost": 17 },
+  { "targetValue": 26, "cost": 18 },
+  { "targetValue": 27, "cost": 19 },
+  { "targetValue": 28, "cost": 20 },
+  { "targetValue": 29, "cost": 21 },
+  { "targetValue": 30, "cost": 22 }
+],
   "races": [
     {
       "id": "human",
