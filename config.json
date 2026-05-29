@@ -1,0 +1,74 @@
+{
+  "settings": {
+    "siteTitle": "龍族大陸角色卡生成器",
+    "totalPoints": 27,
+    "templateImagePath": "assets/card-template.png",
+    "bannerImagePath": "assets/banner.png",
+    "cardWidth": 1200,
+    "cardHeight": 1800
+  },
+  "stats": [
+    { "id": "str", "label": "力量", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 },
+    { "id": "dex", "label": "敏捷", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 },
+    { "id": "con", "label": "體質", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 },
+    { "id": "int", "label": "智力", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 },
+    { "id": "wis", "label": "感知", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 },
+    { "id": "cha", "label": "魅力", "base": 8, "minPurchasedValue": 8, "maxPurchasedValue": 15 }
+  ],
+  "pointCost": [
+    { "targetValue": 8, "cost": 0 },
+    { "targetValue": 9, "cost": 1 },
+    { "targetValue": 10, "cost": 2 },
+    { "targetValue": 11, "cost": 3 },
+    { "targetValue": 12, "cost": 5 },
+    { "targetValue": 13, "cost": 7 },
+    { "targetValue": 14, "cost": 10 },
+    { "targetValue": 15, "cost": 13 }
+  ],
+  "races": [
+    {
+      "id": "human",
+      "name": "人類",
+      "description": "分布於龍族大陸各地的主要種族。適應力強，能在王國、沙漠、森林與邊境都市中建立穩定生活。",
+      "statBonuses": { "str": 1, "dex": 1, "con": 0, "int": 0, "wis": 0, "cha": 0 }
+    },
+    {
+      "id": "northern",
+      "name": "北地民",
+      "description": "來自寒冷北方的堅忍族群，習慣惡劣氣候與嚴苛訓練，重視紀律、耐力與實用技術。",
+      "statBonuses": { "str": 0, "dex": 0, "con": 2, "int": 0, "wis": 0, "cha": 0 }
+    },
+    {
+      "id": "desertborn",
+      "name": "沙海裔",
+      "description": "出身南方沙漠與貿易城邦的人群，熟悉契約、商隊、航路與情報交換，具有強烈冒險精神。",
+      "statBonuses": { "str": 0, "dex": 0, "con": 0, "int": 1, "wis": 0, "cha": 1 }
+    }
+  ],
+  "classes": [
+    {
+      "id": "knight",
+      "name": "騎士",
+      "description": "受王國軍制與騎士傳統訓練的戰士，擅長正面戰鬥、護衛與維持戰線。",
+      "statBonuses": { "str": 1, "dex": 0, "con": 1, "int": 0, "wis": 0, "cha": 0 }
+    },
+    {
+      "id": "adventurer",
+      "name": "冒險者",
+      "description": "接受公會委託、探索未知地區並處理異常事件的自由職業者，能力平均且適應性高。",
+      "statBonuses": { "str": 0, "dex": 1, "con": 0, "int": 0, "wis": 1, "cha": 0 }
+    },
+    {
+      "id": "merchant",
+      "name": "商人",
+      "description": "熟悉契約、議價、物資調度與遠距交易的人物，常在城邦、港口與沙漠商路之間活動。",
+      "statBonuses": { "str": 0, "dex": 0, "con": 0, "int": 1, "wis": 0, "cha": 1 }
+    }
+  ],
+  "birthplaces": [
+    { "id": "capital", "name": "始提瑞特城", "description": "大陸中央的王都與冒險者公會據點。" },
+    { "id": "north", "name": "露奈平原", "description": "北方雪鐵之國的重要地域。" },
+    { "id": "desert", "name": "蘇黎姆沙漠", "description": "南方商路、綠洲與城邦交錯的乾燥地帶。" },
+    { "id": "islands", "name": "多勒仰群島", "description": "東方海域的島嶼地帶，航海與貿易往來頻繁。" }
+  ]
+}
