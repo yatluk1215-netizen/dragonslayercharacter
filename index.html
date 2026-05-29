@@ -1,11 +1,93 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>龍族大陸角色卡生成器</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>龍族大陸角色卡生成器</h1>
-  <p>網站測試成功。</p>
+  <header class="site-header">
+    <div id="banner" class="banner">
+      <h1>龍族大陸角色卡生成器</h1>
+      <p>Dragon Continent Character Card Generator</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>角色基本資料</h2>
+
+      <label>
+        角色名稱
+        <input id="characterName" type="text" placeholder="請輸入角色名稱" />
+      </label>
+
+      <label>
+        出生地
+        <select id="birthplaceSelect"></select>
+      </label>
+
+      <label>
+        種族
+        <select id="raceSelect"></select>
+      </label>
+
+      <label>
+        職業
+        <select id="classSelect"></select>
+      </label>
+    </section>
+
+    <section class="panel">
+      <h2>選擇說明</h2>
+
+      <div class="description-block">
+        <h3>出生地</h3>
+        <p id="birthplaceDescription"></p>
+      </div>
+
+      <div class="description-block">
+        <h3>種族</h3>
+        <p id="raceDescription"></p>
+        <p id="raceBonuses" class="bonus-text"></p>
+      </div>
+
+      <div class="description-block">
+        <h3>職業</h3>
+        <p id="classDescription"></p>
+        <p id="classBonuses" class="bonus-text"></p>
+      </div>
+    </section>
+
+    <section class="panel full-width">
+      <h2>屬性配點</h2>
+
+      <div class="point-summary">
+        <span>可用配點：<strong id="totalPoints">0</strong></span>
+        <span>已用配點：<strong id="usedPoints">0</strong></span>
+        <span>剩餘配點：<strong id="remainingPoints">0</strong></span>
+      </div>
+
+      <p id="pointWarning" class="warning"></p>
+
+      <div id="statsTable" class="stats-table"></div>
+    </section>
+
+    <section class="panel full-width">
+      <h2>角色卡預覽</h2>
+
+      <div class="button-row">
+        <button id="generateButton">生成角色卡</button>
+        <button id="downloadButton" disabled>下載 PNG</button>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="cardCanvas"></canvas>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
