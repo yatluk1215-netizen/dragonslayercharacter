@@ -248,13 +248,8 @@ function updateStatsDisplay() {
   elements.usedPoints.textContent = calculation.usedPoints;
   elements.remainingPoints.textContent = calculation.remainingPoints;
 
-  if (!calculation.isValid) {
-    elements.pointWarning.textContent = "配點已超出上限，請降低部分屬性。";
-    elements.generateButton.disabled = true;
-  } else {
-    elements.pointWarning.textContent = "";
-    elements.generateButton.disabled = false;
-  }
+elements.pointWarning.textContent = "";
+elements.generateButton.disabled = false;
 
   for (const stat of config.stats) {
     const row = elements.statsTable.querySelector(`[data-stat-id="${stat.id}"]`);
