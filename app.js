@@ -183,6 +183,17 @@ function changePurchasedValue(statId, delta) {
     return;
   }
 
+  if (delta > 0) {
+    const currentCalculation = calculateStats();
+    const currentCost = getPointCost(current);
+    const nextCost = getPointCost(next);
+    const extraCost = nextCost - currentCost;
+
+    if (currentCalculation.remainingPoints < extraCost) {
+      return;
+    }
+  }
+
   purchasedValues[statId] = next;
   updateStatsDisplay();
   lastGenerated = false;
