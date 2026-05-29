@@ -65,19 +65,19 @@
       "id": "knight",
       "name": "騎士",
       "description": "受王國軍制與騎士傳統訓練的戰士，擅長正面戰鬥、護衛與維持戰線。",
-      "statBonuses": { "str": 1, "dex": 0, "con": 1, "int": 0, "wis": 0, "cha": 0 }
+      "statBonuses": { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 }
     },
     {
       "id": "adventurer",
       "name": "冒險者",
       "description": "接受公會委託、探索未知地區並處理異常事件的自由職業者，能力平均且適應性高。",
-      "statBonuses": { "str": 0, "dex": 1, "con": 0, "int": 0, "wis": 1, "cha": 0 }
+      "statBonuses": { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 }
     },
     {
       "id": "merchant",
       "name": "商人",
       "description": "熟悉契約、議價、物資調度與遠距交易的人物，常在城邦、港口與沙漠商路之間活動。",
-      "statBonuses": { "str": 0, "dex": 0, "con": 0, "int": 1, "wis": 0, "cha": 1 }
+      "statBonuses": { "str": 0, "dex": 0, "con": 0, "int": 0, "wis": 0, "cha": 0 }
     }
   ],
   "birthplaces": [
